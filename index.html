@@ -3,63 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Моё портфолио</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Саша Нелакирова — Портфолио</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
-      <h1>Привет, я Саша Нелакирова!</h1>
-      <p>Добро пожаловать в моё портфолио.</p>
-      <img src="images/image.jpg" alt="Обо мне" />
+      <div class="logo">Саша Нелакирова</div>
+      <nav>
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
     </header>
 
-    <section>
-      <h2>Обо мне</h2>
-      <p>Я начинающий Prompt-Engineer, этот сайт был создан с помощи AI.</p>
-      <img src="images/about.jpeg" alt="Моё фото" />
-      <button onclick="alert('nelakirova@gmail.com')">Связаться со мной</button>
-    </section>
+    <main>
+      <section id="hero">
+        <div class="text">
+          <h1>Prompt Engineer - Профессия будущего</h1>
+          <p>
+            Профессия Prompt Engineer — это
+            новый и востребованный профиль в мире искусственного интеллекта. В
+            основном, работа Prompt Engineer заключается в создании запросов для
+            ИИ, чтобы добиться от него нужных и качественных результатов.
+          </p>
+      </section>
 
-    <section>
-      <h2>Мои проекты</h2>
-      <div class="project">
-        <a href="https://example.com/project1" target="_blank">
-          <img src="images/project1.jpg" alt="Проект 1" />
-        </a>
-        <p>
-          Проект 1:
-          <a href="https://example.com/project1" target="_blank"
-            >Сайт-визитка</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="https://example.com/project2" target="_blank">
-          <img src="images/project2.jpeg" alt="Проект 2" />
-        </a>
-        <p>
-          Проект 2:
-          <a href="https://example.com/project2" target="_blank"
-            >Телеграмм-Бот</a
-          >
-        </p>
-      </div>
-      <div class="project">
-        <a href="https://example.com/project3" target="_blank">
-          <img src="images/project3.jpeg" alt="Проект 3" />
-        </a>
-        <p>
-          Проект 3:
-          <a href="https://example.com/project3" target="_blank"
-            >Сайт с рецептом</a
-          >
-        </p>
-      </div>
+      <section id="about" class="content-section">
+        <div class="text">
+          <h2>Обо мне</h2>
+          <p>
+            Меня зовут Саша, моя работа заключается в
+            том, чтобы создавать и
+            оптимизировать запросы
+            для искусственного
+            интеллекта, помогая ему
+            решать задачи с
+            максимальной
+            эффективностью. Используя
+            различные языковые
+            модели, я разрабатываю
+            интерактивные решения с
+            использованием AI.
+          </p>
+          <h3>Инструменты</h3>
+          <p>
+            ChatGPT-3, ChatGPT-4, Llama, Midjourney, Gemini
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/about.jpeg" alt="Пример изображения" />
+        </div>
+      </section>
+
+      <section id="projects" class="content-section">
+        <h2>Мои проекты</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Проект 1">
+                <h3>Проект 1</h3>
+                <p>Краткое описание проекта 1. Например, цель, технологии и результаты.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.png" alt="Проект 2">
+                <h3>Проект 2</h3>
+                <p>Краткое описание проекта 2. Например, цель, технологии и результаты.</p>
+            </div>
+        </div>
     </section>
+    
+
+      <section id="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+          <!-- Место для галереи -->
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Контакты</h2>
+        <p>Свяжитесь со мной:</p>
+        <ul>
+          <li>
+            <a href="https://github.com/nelakirova" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a href="https://t.me/nelakirova" target="_blank">Telegram</a>
+          </li>
+          <li><a href="mailto:nelakirova@gmail.com">Email</a></li>
+        </ul>
+      </section>
+    </main>
 
     <footer>
-      <p>&copy; 2024 Саша Нелакирова. Все права защищены.</p>
+      <p>© 2024 Саша Нелакирова</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
+
